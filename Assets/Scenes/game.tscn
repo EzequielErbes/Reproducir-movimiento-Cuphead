@@ -39,7 +39,7 @@
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vco0d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_of0wd"]
-size = Vector2(1162, 89)
+size = Vector2(1174, 79)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_s10co"]
 animations = [{
@@ -156,24 +156,24 @@ animations = [{
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
 visible = false
-position = Vector2(577.5, 615.125)
-scale = Vector2(1145, 56.25)
+position = Vector2(585.5, 634.625)
+scale = Vector2(1161, 17.25)
 texture = SubResource("PlaceholderTexture2D_vco0d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 visible = false
-position = Vector2(582, 604.5)
+position = Vector2(588, 634.5)
 shape = SubResource("RectangleShape2D_of0wd")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 show_behind_parent = true
-position = Vector2(579.5, 323)
-scale = Vector2(1.21206, 1.19521)
+position = Vector2(577, 325)
+scale = Vector2(1.25572, 1.28177)
 texture = ExtResource("2_ofmq0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(596, 168)
-scale = Vector2(0.795722, 0.753986)
+position = Vector2(596, 160)
+scale = Vector2(0.795722, 0.797266)
 sprite_frames = SubResource("SpriteFrames_s10co")
 animation = &"kingdice"
 autoplay = "kingdice"
