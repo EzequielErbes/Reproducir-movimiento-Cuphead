@@ -1,3 +1,179 @@
-[gd_scene format=3 uid="uid://cnhs5j5je3cas"]
+[gd_scene load_steps=39 format=3 uid="uid://cnhs5j5je3cas"]
+
+[ext_resource type="PackedScene" uid="uid://dxus7mv2pajhr" path="res://Assets/Scenes/player.tscn" id="1_rtoqm"]
+[ext_resource type="Texture2D" uid="uid://b6vmujb6b6etd" path="res://18_04_2025 17_32_07.png" id="2_ofmq0"]
+[ext_resource type="Texture2D" uid="uid://durp71si3xy05" path="res://Idle/boss-battle-kingdice-idle (1).png" id="3_up7ea"]
+[ext_resource type="Texture2D" uid="uid://cq0fri7txmmgr" path="res://Idle/boss-battle-kingdice-idle (2).png" id="4_32eli"]
+[ext_resource type="Texture2D" uid="uid://3nipxpyli65b" path="res://Idle/boss-battle-kingdice-idle (3).png" id="5_tswjy"]
+[ext_resource type="Texture2D" uid="uid://bg5bskxss14f8" path="res://Idle/boss-battle-kingdice-idle (4).png" id="6_gx1yl"]
+[ext_resource type="Texture2D" uid="uid://ctrui708juse" path="res://Idle/boss-battle-kingdice-idle (5).png" id="7_okpos"]
+[ext_resource type="Texture2D" uid="uid://btf8lpjp4od6k" path="res://Idle/boss-battle-kingdice-idle (6).png" id="8_84tst"]
+[ext_resource type="Texture2D" uid="uid://drd12hol7aekt" path="res://Idle/boss-battle-kingdice-idle (7).png" id="9_wlexe"]
+[ext_resource type="Texture2D" uid="uid://cme4w8j0l6lub" path="res://Idle/boss-battle-kingdice-idle (8).png" id="10_57x62"]
+[ext_resource type="Texture2D" uid="uid://cn0rcck4acvh2" path="res://Idle/boss-battle-kingdice-idle (9).png" id="11_22816"]
+[ext_resource type="Texture2D" uid="uid://blfcjn5sqh8vh" path="res://Idle/boss-battle-kingdice-idle (10).png" id="12_f8dch"]
+[ext_resource type="Texture2D" uid="uid://db572jswevew1" path="res://Idle/boss-battle-kingdice-idle (11).png" id="13_nxxhm"]
+[ext_resource type="Texture2D" uid="uid://co3otr5an2ba2" path="res://Idle/boss-battle-kingdice-idle (12).png" id="14_4p5w6"]
+[ext_resource type="Texture2D" uid="uid://bubji5opgqd0o" path="res://Idle/boss-battle-kingdice-idle (13).png" id="15_nxfpm"]
+[ext_resource type="Texture2D" uid="uid://d8nq2g1myw0s" path="res://Idle/boss-battle-kingdice-idle (14).png" id="16_r08ed"]
+[ext_resource type="Texture2D" uid="uid://bisyvodw1l80l" path="res://Idle/boss-battle-kingdice-idle (15).png" id="17_6j0pj"]
+[ext_resource type="Texture2D" uid="uid://dfge0inowxusa" path="res://Idle/boss-battle-kingdice-idle (16).png" id="18_dqkkm"]
+[ext_resource type="Texture2D" uid="uid://hxecow6717ib" path="res://Idle/boss-battle-kingdice-idle (17).png" id="19_xkhlv"]
+[ext_resource type="Texture2D" uid="uid://b38j0pvpu1m1l" path="res://Idle/boss-battle-kingdice-idle (18).png" id="20_t7056"]
+[ext_resource type="Texture2D" uid="uid://c6i20jepkbymx" path="res://Idle/boss-battle-kingdice-idle (19).png" id="21_nnmnh"]
+[ext_resource type="Texture2D" uid="uid://deyfeyfgi1og5" path="res://Idle/boss-battle-kingdice-idle (20).png" id="22_1mvii"]
+[ext_resource type="Texture2D" uid="uid://pbic7pc0q8b0" path="res://Idle/boss-battle-kingdice-idle (21).png" id="23_58xia"]
+[ext_resource type="Texture2D" uid="uid://dkv27620br3s0" path="res://Idle/boss-battle-kingdice-idle (22).png" id="24_v1vq8"]
+[ext_resource type="Texture2D" uid="uid://dvl20jmy5qtwu" path="res://Idle/boss-battle-kingdice-idle (23).png" id="25_wx2d0"]
+[ext_resource type="Texture2D" uid="uid://di68ycxcn1uva" path="res://Idle/boss-battle-kingdice-idle (24).png" id="26_o6060"]
+[ext_resource type="Texture2D" uid="uid://hsi6n0vsypn0" path="res://Idle/boss-battle-kingdice-idle (25).png" id="27_onlnx"]
+[ext_resource type="Texture2D" uid="uid://c3kgap0o2xnde" path="res://Idle/boss-battle-kingdice-idle (26).png" id="28_v5ksq"]
+[ext_resource type="Texture2D" uid="uid://dpbpxoqh3228m" path="res://Idle/boss-battle-kingdice-idle (27).png" id="29_6twgh"]
+[ext_resource type="Texture2D" uid="uid://y1bp7w6r830h" path="res://Idle/boss-battle-kingdice-idle (28).png" id="30_w7i0h"]
+[ext_resource type="Texture2D" uid="uid://bb23vl20ye2s3" path="res://Idle/boss-battle-kingdice-idle (29).png" id="31_7g8uw"]
+[ext_resource type="Texture2D" uid="uid://bs4026bnddv3x" path="res://Idle/boss-battle-kingdice-idle (30).png" id="32_vhy3c"]
+[ext_resource type="Texture2D" uid="uid://br6s51unw3vr7" path="res://Idle/boss-battle-kingdice-idle (31).png" id="33_tkxt7"]
+[ext_resource type="Texture2D" uid="uid://bahcqmwvvei5" path="res://Idle/boss-battle-kingdice-idle (32).png" id="34_tmflg"]
+[ext_resource type="Texture2D" uid="uid://bvfkmywfuuans" path="res://Idle/boss-battle-kingdice-idle (33).png" id="35_8myye"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vco0d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_of0wd"]
+size = Vector2(1162, 89)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s10co"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_up7ea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_32eli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tswjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_gx1yl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_okpos")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_84tst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wlexe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_57x62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_22816")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_f8dch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nxxhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_4p5w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nxfpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_r08ed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6j0pj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_dqkkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_xkhlv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_t7056")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_nnmnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_1mvii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_58xia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_v1vq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_wx2d0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_o6060")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_onlnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_v5ksq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_6twgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_w7i0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_7g8uw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_vhy3c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_tkxt7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_tmflg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_8myye")
+}],
+"loop": true,
+"name": &"kingdice",
+"speed": 14.0
+}]
 
 [node name="Game" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_rtoqm")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+visible = false
+position = Vector2(577.5, 615.125)
+scale = Vector2(1145, 56.25)
+texture = SubResource("PlaceholderTexture2D_vco0d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+visible = false
+position = Vector2(582, 604.5)
+shape = SubResource("RectangleShape2D_of0wd")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(579.5, 323)
+scale = Vector2(1.21206, 1.19521)
+texture = ExtResource("2_ofmq0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(596, 168)
+scale = Vector2(0.795722, 0.753986)
+sprite_frames = SubResource("SpriteFrames_s10co")
+animation = &"kingdice"
+autoplay = "kingdice"

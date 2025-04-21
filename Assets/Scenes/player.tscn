@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://dxus7mv2pajhr"]
+[gd_scene load_steps=33 format=3 uid="uid://dxus7mv2pajhr"]
 
 [ext_resource type="Texture2D" uid="uid://bp0ymjp6cfxv7" path="res://Idle/cuphead_idle_0001.png" id="1_kwy3q"]
 [ext_resource type="Texture2D" uid="uid://b53185oaivqbc" path="res://Idle/cuphead_idle_0002.png" id="2_2t0h8"]
@@ -29,6 +29,42 @@
 [ext_resource type="Texture2D" uid="uid://t7lhq1whs4sp" path="res://Run/Normal/cuphead_run_0014.png" id="27_svnxd"]
 [ext_resource type="Texture2D" uid="uid://bnv7hjof3eki4" path="res://Run/Normal/cuphead_run_0015.png" id="28_ruc5h"]
 [ext_resource type="Texture2D" uid="uid://bfp0prpkey67p" path="res://Run/Normal/cuphead_run_0016.png" id="29_4tbyk"]
+
+[sub_resource type="GDScript" id="GDScript_6onc5"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+
+
+func _physics_process(delta: float) -> void:
+
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+		if velocity.y < 0:
+			$AnimatedSprite2D.play(\"jump\")
+		else:
+			$AnimatedSprite2D.play(\"fall\")
+
+	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+
+	var direction := Input.get_axis(\"ui_left\", \"ui_right\")
+	
+	if direction:
+		velocity.x = direction * SPEED
+		if is_on_floor():
+			$AnimatedSprite2D.play(\"walk\")
+			$AnimatedSprite2D.flip_h = direction < 0
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		if is_on_floor():
+			$AnimatedSprite2D.play(\"idle\")
+
+	move_and_slide()
+"
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6nt16"]
 radius = 35.0
@@ -140,10 +176,13 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = SubResource("GDScript_6onc5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(50, 519)
 shape = SubResource("CapsuleShape2D_6nt16")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(50, 522)
 sprite_frames = SubResource("SpriteFrames_qkmjo")
-animation = &"jump"
+animation = &"walk"
