@@ -171,7 +171,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 12.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -257,6 +257,7 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+top_level = true
 script = SubResource("GDScript_6onc5")
 
 [node name="Label" type="Label" parent="."]
