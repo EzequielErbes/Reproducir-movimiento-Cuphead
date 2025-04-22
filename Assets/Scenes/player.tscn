@@ -52,7 +52,7 @@ script/source = "extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-const aceleration_step = 400.0
+const aceleration_step = 300.0
 const desaceleration_step = 300.0
 
 var jump_count = 0
